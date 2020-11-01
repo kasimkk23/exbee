@@ -1,0 +1,137 @@
+.school__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+}
+
+@media screen and (max-width: 996px) {
+  .school__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+
+.school__container--left {
+  position: relative;
+}
+
+.school__circle-1 {
+  position: absolute;
+  top: 122px;
+  left: 30px;
+  -webkit-animation: loading 3s linear infinite;
+          animation: loading 3s linear infinite;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .school__circle-1 {
+    top: 122px;
+    left: 33px;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .school__circle-1 {
+    top: 122px;
+    left: 30px;
+  }
+}
+
+.school__circle-2 {
+  position: absolute;
+  top: 122px;
+  left: 692px;
+  -webkit-animation: loading 3s linear infinite;
+          animation: loading 3s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .school__circle-2 {
+    top: 122px;
+    left: 696px;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .school__circle-2 {
+    top: 122px;
+    left: 692px;
+  }
+}
+
+.school__circle-3 {
+  position: absolute;
+  top: 122px;
+  left: 458px;
+  -webkit-animation: loading 3s linear infinite;
+          animation: loading 3s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .school__circle-3 {
+    top: 122px;
+    left: 461px;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .school__circle-3 {
+    top: 122px;
+    left: 458px;
+  }
+}
+/*# sourceMappingURL=school.css.map */

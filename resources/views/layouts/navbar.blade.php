@@ -8,6 +8,9 @@
         <a href="/" class="navbar__menu--links">About</a>
         <a href="/" class="navbar__menu--links">Lobby</a>
         <a href="/" class="navbar__menu--links">Contact</a>
-        <a href="/" class="navbar__menu--links" id="button">Search</a>
+        
+
+        <input type="text" id="search" placeholder="search" />
+        <i class="fa fa-search"></i>
       </div>
     </nav>

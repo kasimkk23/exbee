@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('hero');
 });
+
+// Route::get('/lobby', function () {
+//     return view('lobby');
+// });
+
+Route::get('/school', function () {
+    return view('school');
+});
+
+Route::get('/networking', function () {
+    return view('networking');
+});

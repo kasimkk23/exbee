@@ -1,0 +1,86 @@
+
+.lobby__circle-1 {
+  position: absolute;
+  top: 123px;
+  left: 164px;
+  animation: loading 3s linear infinite;
+  @keyframes loading {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.lobby__circle-2 {
+  position: absolute;
+  top: 181px;
+  left: 369px;
+  animation: loading 3s linear infinite;
+  @keyframes loading {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+.lobby__circle-3 {
+  position: absolute;
+  top: 251px;
+  left: 99px;
+  animation: loading 3s linear infinite;
+  @keyframes loading {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+.lobby__circle-4 {
+  position: absolute;
+  top: 253px;
+  left: 298px;
+  animation: loading 3s linear infinite;
+  @keyframes loading {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+.lobby__circle-5 {
+  position: absolute;
+  top: 336px;
+  left: 205px;
+  animation: loading 3s linear infinite;
+  @keyframes loading {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+.lobby__circle-6 {
+  position: absolute;
+  top: 321px;
+  left: 476px;
+  animation: loading 3s linear infinite;
+  @keyframes loading {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

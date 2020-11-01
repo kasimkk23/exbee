@@ -1,0 +1,48 @@
+@import "colors";
+@import "media_queries";
+
+.networking {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    // height: 50vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      height: 100%;
+    }
+  }
+}
+
+.networking__container--left {
+  position: relative;
+}
+
+.networking__circle-1 {
+  position: absolute;
+  top: 290px;
+  left: 193px;
+  animation: loading 3s linear infinite;
+  @keyframes loading {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @include tv {
+    top: 290px;
+    left: 193px;
+  }
+  @include tablet {
+    top: 290px;
+    left: 193px;
+  }
+}

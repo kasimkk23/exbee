@@ -1,0 +1,94 @@
+@import "colors";
+@import "media_queries";
+
+.school {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    // height: 50vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      height: 100%;
+    }
+  }
+}
+
+.school__container--left {
+  position: relative;
+}
+
+.school__circle-1 {
+  position: absolute;
+  top: 122px;
+  left: 30px;
+  animation: loading 3s linear infinite;
+  @keyframes loading {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @include tv {
+    top: 122px;
+    left: 33px;
+  }
+  @include tablet {
+    top: 122px;
+    left: 30px;
+  }
+}
+
+.school__circle-2 {
+  position: absolute;
+  top: 122px;
+  left: 692px;
+  animation: loading 3s linear infinite;
+  @keyframes loading {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @include tv {
+    top: 122px;
+    left: 696px;
+  }
+  @include tablet {
+    top: 122px;
+    left: 692px;
+  }
+}
+
+.school__circle-3 {
+  position: absolute;
+  top: 122px;
+  left: 458px;
+  animation: loading 3s linear infinite;
+  @keyframes loading {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @include tv {
+    top: 122px;
+    left: 461px;
+  }
+  @include tablet {
+    top: 122px;
+    left: 458px;
+  }
+}

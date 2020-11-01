@@ -1,0 +1,71 @@
+.networking__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+}
+
+@media screen and (max-width: 996px) {
+  .networking__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+
+.networking__container--left {
+  position: relative;
+}
+
+.networking__circle-1 {
+  position: absolute;
+  top: 290px;
+  left: 193px;
+  -webkit-animation: loading 3s linear infinite;
+          animation: loading 3s linear infinite;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .networking__circle-1 {
+    top: 290px;
+    left: 193px;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .networking__circle-1 {
+    top: 290px;
+    left: 193px;
+  }
+}
+/*# sourceMappingURL=networking.css.map */

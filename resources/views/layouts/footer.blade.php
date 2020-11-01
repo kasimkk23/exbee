@@ -1,1 +1,1 @@
-<footer>Copyright 2020 IWIS Workshop</footer>
+<footer>Copyright 	&copy; 2020 IWIS Workshop</footer>

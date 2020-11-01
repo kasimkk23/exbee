@@ -1,4 +1,7 @@
 @import "navbar";
+@import "lobby";
+@import "school";
+@import "networking";
 @import "colors";
 
 * {
@@ -11,7 +14,8 @@
 // Hero Section CSS
 
 .hero {
-  background-color: $light;
+  background-color: $lime;
+  height: 80vh;
 
   &__container {
     display: grid;
@@ -33,6 +37,7 @@
     &--left {
       width: 100%;
       line-height: 1.2;
+      margin-top: 30px;
 
       @include tablet {
         padding: 5rem 0;
@@ -44,7 +49,8 @@
     }
     &--left h1 {
       font-size: 4rem;
-      color: $lime;
+      color: $dark;
+      font-weight: 600;
 
       @include mobile {
         font-size: 1.5rem;
@@ -53,6 +59,16 @@
 
     &--left h2 {
       font-size: 4rem;
+      font-weight: 900;
+      color: $dark;
+
+      @include mobile {
+        font-size: 2rem;
+      }
+    }
+
+    &--left p {
+      font-size: 1.3rem;
       color: $dark;
 
       @include mobile {
@@ -62,7 +78,7 @@
 
     &--btn {
       font-size: 1rem;
-      background-color: $lime;
+      background-color: $dark;
       padding: 14px 32px;
       border: none;
       border-radius: 4px;
@@ -87,13 +103,15 @@
       left: 0;
       width: 0;
       height: 100%;
-      background: $orangeRed;
+      background: $lime;
       transition: all 0.3s;
       border-radius: 4px;
     }
 
     &--btn:hover:after {
       width: 100%;
+      border: 2px solid $dark;
+      color: $dark;
     }
 
     &--right {
@@ -108,5 +126,9 @@
 }
 
 footer {
+  margin-top: 80px;
   text-align: center;
+  font-size: larger;
+  background: #fff;
+  font-weight: 600;
 }
