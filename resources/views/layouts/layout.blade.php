@@ -10,14 +10,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <!-- Fonts -->
         <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet"> -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
 
     @include('layouts.navbar')
 
-    @yield('networking')
+    @yield('content')
 
-    <!-- @include('layouts.footer') -->
+    @include('layouts.footer')
+    
+    <script src="{{ asset('js/mine.js') }}" ></script>
     </body>
 </html>

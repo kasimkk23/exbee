@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('networking')
+@section('content')
 <div class="networking">
         <img src="/img/icon2.png" alt="" width="90px" style="margin-left: 100px;">
     <div class="networking__container">
@@ -17,4 +17,4 @@
         </div>
     </div>
 </div>
-@endsection('networking')
+@endsection('content')

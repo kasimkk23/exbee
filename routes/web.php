@@ -11,18 +11,24 @@
 |
 */
 
-Route::get('/', function () {
-    return view('hero');
-});
+Auth::routes();
 
-// Route::get('/lobby', function () {
-//     return view('lobby');
-// });
+Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/school', function () {
-    return view('school');
-});
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/', function () {
+        return view('hero');
+    })->name('hero');
 
-Route::get('/networking', function () {
-    return view('networking');
+    Route::get('/lobby', function () {
+        return view('lobby');
+    })->name('lobby');
+    
+    Route::get('/school', function () {
+        return view('school');
+    })->name('school');
+    
+    Route::get('/networking', function () {
+        return view('networking');
+    })->name('networking');
 });

@@ -24,6 +24,15 @@
     font-weight: 600;
   }
 
+  &__logout {
+    margin: 0px 11px;
+    font-size: medium;
+  }
+
+  &__logout a:hover {
+    color: $lime;
+  }
+
   &__bars {
     opacity: 0;
 
@@ -43,6 +52,7 @@
     font-weight: 700;
     text-align: center;
     margin-right: 24px;
+
     @include mobile {
       display: none;
     }
@@ -52,18 +62,27 @@
       justify-content: center;
       text-decoration: none;
       padding: 0 1rem;
+      font-size: medium;
 
       &:hover {
-        color: $dark;
-        margin-bottom: 2px;
+        color: $lime;
+        font-size: medium;
+        // margin-bottom: 2px;
         // transition: all 0.3s ease;
-        border-bottom: 2px solid $lime;
+        // border-bottom: 2px solid $lime;
       }
     }
     #search {
       outline: 0;
       border-width: 0 0 2px;
-      border-color: $dark;
+      border-color: #dedede;
     }
   }
+}
+
+.navbar__active {
+  // color: $dark;
+  // margin-bottom: 2px;
+  border-bottom: 2px solid $lime;
+  font-size: medium;
 }

@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('school')
+@section('content')
 <div class="school">
         <img src="/img/icon1.png" alt="" width="90px" style="margin-left: 100px;">
     <div class="school__container">
@@ -18,4 +18,4 @@
         </div>
     </div>
 </div>
-@endsection('school')
+@endsection('content')

@@ -9,11 +9,11 @@
         <p>Impedance Spectroscopy is an important measurement method in many 
             applications fields such as electrochemistry etc</p>
         <button class="hero__container--btn">
-            <a href=""> Visit Lobby</a>
+            <a href="{{ route('lobby') }}"> Visit Lobby</a>
         </button>
     </div>
     <div class="hero__container--right">
-        <a href=""><img src="/img/tu.jpg" alt="" class="hero__container--img"></a>
+        <a href="{{ route('lobby') }}"><img src="/img/tu.jpg" alt="" class="hero__container--img"></a>
     </div>
     </div>
 </div>
