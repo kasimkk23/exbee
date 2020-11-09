@@ -8,6 +8,7 @@
           align-items: center;
   justify-items: center;
   margin: 0 auto;
+  height: 100vh;
   z-index: 1;
   width: 100%;
   max-width: 1200px;
@@ -23,12 +24,13 @@
 
 .school__container--left {
   position: relative;
+  margin-top: 50px;
 }
 
 .school__circle-1 {
   position: absolute;
-  top: 122px;
-  left: 30px;
+  top: 32px;
+  left: 96px;
   -webkit-animation: loading 3s linear infinite;
           animation: loading 3s linear infinite;
 }
@@ -71,8 +73,8 @@
 
 .school__circle-2 {
   position: absolute;
-  top: 122px;
-  left: 692px;
+  top: 32px;
+  left: 464px;
   -webkit-animation: loading 3s linear infinite;
           animation: loading 3s linear infinite;
 }
@@ -104,8 +106,8 @@
 
 .school__circle-3 {
   position: absolute;
-  top: 122px;
-  left: 458px;
+  top: 32px;
+  left: 777px;
   -webkit-animation: loading 3s linear infinite;
           animation: loading 3s linear infinite;
 }

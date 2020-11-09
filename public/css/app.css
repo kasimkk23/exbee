@@ -441,6 +441,7 @@
   align-items: center;
   justify-items: center;
   margin: 0 auto;
+  height: 100vh;
   z-index: 1;
   width: 100%;
   max-width: 1200px;
@@ -455,12 +456,13 @@
 
 .school__container--left {
   position: relative;
+  margin-top: 50px;
 }
 
 .school__circle-1 {
   position: absolute;
-  top: 122px;
-  left: 30px;
+  top: 32px;
+  left: 96px;
   -webkit-animation: loading 3s linear infinite;
           animation: loading 3s linear infinite;
 }
@@ -491,8 +493,8 @@
 
 .school__circle-2 {
   position: absolute;
-  top: 122px;
-  left: 692px;
+  top: 32px;
+  left: 464px;
   -webkit-animation: loading 3s linear infinite;
           animation: loading 3s linear infinite;
 }
@@ -523,8 +525,8 @@
 
 .school__circle-3 {
   position: absolute;
-  top: 122px;
-  left: 458px;
+  top: 32px;
+  left: 777px;
   -webkit-animation: loading 3s linear infinite;
           animation: loading 3s linear infinite;
 }
@@ -780,174 +782,45 @@ input {
   font-family: "Roboto", sans-serif;
 }
 
-.hero {
-  background-color: #febf00;
-  height: 80vh;
-}
-
-.hero__container {
+.hero .hero__container {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  margin: 0 auto;
-  height: 60vh;
-  z-index: 1;
-  width: 100%;
-  max-width: 1200px;
-  padding-right: 24px;
-  padding-left: 24px;
+  height: 100vh;
 }
 
-@media screen and (max-width: 996px) {
-  .hero__container {
-    grid-template-columns: 1fr;
-    height: 100%;
-  }
+.hero .hero__container .hero__container--left .hero__container--img {
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100vh;
 }
 
-.hero__container--left {
-  width: 100%;
-  line-height: 1.2;
-  margin-top: 30px;
+.hero .hero__container .hero__container--right {
+  background-color: #febf00;
+  height: 100vh;
 }
 
-@media screen and (max-width: 996px) {
-  .hero__container--left {
-    padding: 5rem 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero__container--left {
-    line-height: 1.5;
-  }
-}
-
-.hero__container--left h1 {
-  font-size: 3rem;
-  color: #333333;
-  font-weight: 600;
-}
-
-@media screen and (max-width: 996px) {
-  .hero__container--left h1 {
-    font-size: 2.3rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero__container--left h1 {
-    font-size: 2rem;
-  }
-}
-
-.hero__container--left h2 {
-  font-size: 3rem;
-  font-weight: 900;
-  color: #333333;
-}
-
-@media screen and (max-width: 996px) {
-  .hero__container--left h2 {
-    font-size: 2.3rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero__container--left h2 {
-    font-size: 2rem;
-  }
-}
-
-.hero__container--left p {
-  font-size: 1.3rem;
-  color: #333333;
-}
-
-@media screen and (max-width: 768px) {
-  .hero__container--left p {
-    font-size: 1.3rem;
-  }
-}
-
-.hero__container--btn {
-  font-size: 1rem;
-  background-color: #333333;
-  padding: 14px 32px;
-  border: none;
-  border-radius: 4px;
-  color: #f7f7f7;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.3s;
-  outline: none;
-}
-
-@media screen and (max-width: 996px) {
-  .hero__container--btn {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-  }
-}
-
-.hero__container--btn a {
-  position: relative;
-  z-index: 2;
-  color: #f7f7f7;
-  text-decoration: none;
-}
-
-.hero__container--btn:after {
+.hero .hero__container .hero__container--right .hero__right-side {
   position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #febf00;
-  transition: all 0.3s;
-  border-radius: 4px;
+  top: 50%;
+  left: 50%;
 }
 
-.hero__container--btn:hover:after {
-  width: 100%;
-  border: 2px solid #333333;
-  color: #333333;
+.hero .hero__container .hero__container--right .hero__right-side .hero__right-side-h1 {
+  font-size: 45px;
+  margin-top: -140px;
+  margin-left: 231px;
+  transform: translateX(50%) translateY(50%) rotate(90deg);
 }
 
-.hero__container--right {
-  text-align: center;
-}
-
-.hero__container--img {
-  height: 100%;
-  width: 100%;
-}
-
-footer {
+.hero .hero__container .hero__line {
+  width: 40px;
+  height: 0px;
+  border-bottom: 2px solid #fff;
   position: absolute;
-  bottom: 0;
-  left: 38%;
-  background: #fff;
 }
 
-@media screen and (max-width: 996px) {
-  footer {
-    position: absolute;
-    bottom: 0;
-    left: 30%;
-    margin-bottom: -212px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  footer {
-    position: absolute;
-    bottom: 0;
-    left: 30%;
-    margin-bottom: -212px;
-  }
+.hero .hero__container .hero__welcome-color {
+  color: #fff;
 }
 

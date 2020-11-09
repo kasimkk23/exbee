@@ -19,7 +19,6 @@
 
     @yield('content')
 
-    @include('layouts.footer')
     
     <script src="{{ asset('js/mine.js') }}" ></script>
     </body>

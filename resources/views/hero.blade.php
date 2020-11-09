@@ -4,17 +4,16 @@
 <div class="hero">
     <div class="hero__container">
     <div class="hero__container--left">
-        <h2>Welcome to</h2>
-        <h2>IWIS Workshop</h2>
-        <p>Impedance Spectroscopy is an important measurement method in many 
-            applications fields such as electrochemistry etc</p>
-        <button class="hero__container--btn">
-            <a href="{{ route('lobby') }}"> Visit Lobby</a>
-        </button>
+        <img src="/img/tu1.jpg" alt="" class="hero__container--img">
     </div>
     <div class="hero__container--right">
-        <a href="{{ route('lobby') }}"><img src="/img/tu.jpg" alt="" class="hero__container--img"></a>
+        <div class="hero__right-side">
+            <h1 class="hero__right-side-h1">
+            <span class="hero__line"></span>
+           <span class="hero__welcome-color">Welcome to</span> <br>IWIS Workshop</h1>
+        </div>
     </div>
+    
     </div>
 </div>
 @endsection('content')
